@@ -26,6 +26,26 @@ function __autoload($classe) {
     }
 }
 
-echo PAGINA_INSTITUICAO;
+$sessao = new Sessao();
+if (isset( $_GET ["iniciar"])) {
+    $id = 1;
+    $nivel = 1;
+    $login = "giovanildo";
+    $sessao->criaSessao($id, $nivel, $login);    
+    echo "usuário " . $login . " está logado ";
+}
+
+if (isset( $_GET ["sair"])) {
+    $usuario = $sessao->getLoginUsuario();
+    $sessao->mataSessao();
+    echo "fechando a sessão  do usuário " . $usuario;
+}
 
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Lombras Liga</title>
+<meta name="viewport" cont
