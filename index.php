@@ -44,8 +44,6 @@ if (isset($_GET["sair"])) {
 
 HomeView::main();
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -58,8 +56,25 @@ HomeView::main();
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/js.js"></script>
 
+
 <body>
 
+	<div class="pagina doze colunas">
+		<div class="topo doze linha fundo-branco">
+			<div class="conteudo">
+				<div class=""logo-lombras">
+				<?php
+    echo '<a href="' . PAGINA_INSTITUICAO . '"> <img alt="logotipo lombras" src="img/logo_' . NOME_INSTITUICAO . ' .png" title="Lombras Liga"> </a>';
+    ?>
+				</div>
+				<div id="logo-lombras2">
+				
+				</div>
+			</div>
+
+		</div>
+
+	</div>
 
 </body>
 
