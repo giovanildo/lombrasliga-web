@@ -10,6 +10,11 @@ h1 {
 	background-image: url(../img/sobre-background.jpg);
 	padding: 10px;
 }
+
+h1 + p{
+	text-indent: 0;
+}
+
 h2{
 	border-bottom: 1px solid #333333;
 	margin-top: 30px;
@@ -31,6 +36,12 @@ p {
 	color: rgb(0,0,0);
 	padding: 0 45px;
 	text-indent: 20px;
+}
+p::first-letter{
+	font-weight: bold;
+}
+p::first-line{
+	font-variant: small-caps;
 }
 #centro-distribuicao {
 	margin: 0 0 10px 10px;
