@@ -64,7 +64,7 @@ HomeView::main();
 			<div class="conteudo">
 				<div class=""logo-lombras">
 				<?php
-    echo '<a href="' . PAGINA_INSTITUICAO . '"> <img alt="logotipo lombras" src="img/logo_' . NOME_INSTITUICAO . ' .png" title="Lombras Liga"> </a>';
+    echo '<a href="' . PAGINA_INSTITUICAO 2 . '"> <img alt="logotipo lombras" src="img/logo_' . NOME_INSTITUICAO . ' .png" title="Lombras Liga"> </a>';
     ?>
 				</div>
 				<div id="logo-lombras2">
